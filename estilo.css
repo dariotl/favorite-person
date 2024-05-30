@@ -1,0 +1,116 @@
+html{
+    font-family:"Roboto Slab", serif;
+}
+body{
+    /* margin 0; */
+    background-color: #efefef;
+}
+header{
+    font-size: 0.3rem;
+    background-color: #f7aac3;
+    color: rgb(46, 45, 43);
+    padding: 0.9px 1px;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+article h2{
+    font-size: 1.2rem;
+}
+
+article .p1{
+color: red;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+}
+
+article .p2{
+    background-image: linear-gradient(to right, pink, rgb(188, 138, 138) );
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+.img2{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container {
+    width: 200px;
+    margin: 0 auto;
+}
+
+section article{
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+
+section article h2, section article p{
+    margin: 1rem;
+}
+
+footer{
+    /* background-color: grey;
+    padding: 3rem;
+    color: white; */
+    
+    background-color: #f7aac3; /* Rosa suave */
+    padding: 3rem;
+    color: #fff; /* Texto en blanco */
+    position: relative; /* Para posicionar elementos animados */
+    overflow: hidden;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+    font-size: 0.7rem;
+    /* margin: ; */
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: cornflowerblue;
+}
+
+@keyframes bounce{
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.post{
+    animation: bounce 1s infinite;
+}
+section a{
+    font-size: small;
+}
+
